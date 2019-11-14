@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:background="@drawable/login_award_item_bg">
+
+        <ImageView
+            android:id="@+id/bling_bling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/sel"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_award_item_content_big_bg" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/login_award_item_content_small_bg" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/login_award_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="第1天"
+            android:textColor="@color/white"
+            android:textSize="7sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="M币"
+            android:textColor="#FFFD2E38"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/login_award_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="x20"
+            android:textColor="#FFFD2E38"
+            android:textSize="9sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_award_receive"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:background="@drawable/login_award_item_select_bg"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/login_award_item_get_bg" />
+    </RelativeLayout>
+</FrameLayout>

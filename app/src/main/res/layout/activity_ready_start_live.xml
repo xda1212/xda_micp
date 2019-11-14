@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ready_start_bg">
+    <!--创建直播遮罩层-->
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--无用-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cb_set_pass"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/pass_room"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:visibility="gone">
+
+                <CheckBox
+                    android:id="@+id/cb_set_charge"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/open_charge_mode"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:visibility="visible">
+
+                <CheckBox
+                    android:id="@+id/cb_set_charge_h"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/open_charge_mode_h"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/ready_start_live_back"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:padding="5dp"
+                android:src="@drawable/icon_arrow_left_white" />
+
+            <ImageView
+                android:id="@+id/iv_live_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="11dp"
+                android:src="@drawable/room_live_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/ready_start_live_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp">
+
+            <ImageView
+                android:id="@+id/iv_live_select_pic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/public_community_list_default_add" />
+
+            <com.micp.im.widget.BlackEditText
+                android:id="@+id/et_start_live_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@null"
+                android:hint="@string/create_edit_text_hint"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ready_start_live_normal_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/ready_start_live_checkbox_selector"
+                android:drawablePadding="6dp"
+                android:text="普通房间"
+                android:textColor="@drawable/ready_start_live_checkbox_text_selector"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/ready_start_live_private_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:button="@null"
+                android:drawableLeft="@drawable/ready_start_live_checkbox_selector"
+                android:drawablePadding="6dp"
+                android:text="VIP房间"
+                android:textColor="@drawable/ready_start_live_checkbox_text_selector"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ready_start_live_cost_layout"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="48dp"
+            android:background="@drawable/ready_start_live_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:visibility="invisible">
+
+            <EditText
+                android:id="@+id/tv_live_roomtype"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableBottom="@drawable/shape_edit_text_bg"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:inputType="number"
+                android:lines="1"
+                android:textColor="@color/color_F27"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M币/分钟"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_start_live"
+        android:layout_width="158dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/ready_live_bg"
+        android:gravity="center"
+        android:text="开始直播"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+</RelativeLayout>

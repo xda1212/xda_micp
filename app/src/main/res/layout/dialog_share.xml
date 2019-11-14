@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="请选择分享平台"
+        android:textColor="@color/color_3"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_share_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/umeng_socialize_wechat"
+            android:drawablePadding="11dp"
+            android:gravity="center_horizontal"
+            android:text="微信"
+            android:textColor="@color/color_3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dialog_share_wechat_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/umeng_socialize_wxcircle"
+            android:drawablePadding="11dp"
+            android:gravity="center_horizontal"
+            android:text="微信朋友圈"
+            android:textColor="@color/color_3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dialog_share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/umeng_socialize_qq"
+            android:drawablePadding="11dp"
+            android:gravity="center_horizontal"
+            android:text="QQ"
+            android:textColor="@color/color_3"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_share_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/umeng_socialize_qzone"
+            android:drawablePadding="11dp"
+            android:gravity="center_horizontal"
+            android:text="QQ空间"
+            android:textColor="@color/color_3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/dialog_share_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/umeng_socialize_sina"
+            android:drawablePadding="11dp"
+            android:gravity="center_horizontal"
+            android:text="新浪微博"
+            android:textColor="@color/color_3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_share_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/shape_dialog_share_button"
+        android:gravity="center"
+        android:text="取消分享"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

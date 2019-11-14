@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 常用颜色值 -->
+    <color name="maintone">#FFD350</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="gray2">#AFAEAF</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="lightblue2">#0065FF</color>
+    <color name="global">#ffd350</color>
+    <color name="global2">#FAC730</color>
+    <color name="global3">#FEDF75</color>
+    <color name="colorAccent">#0accac</color>
+    <color name="ready_live">#dfdede</color>
+    <color name="end_live">#9c9c9c</color>
+    <color name="main_green">#40AA53</color>
+    <color name="main_black">#333</color>
+    <color name="home_page_text_color">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_blank">#99000000</color>
+    <color name="light_gray2">#B4B4B4</color>
+    <color name="bright_yellow">#FAF767</color>
+    <color name="main_background">#F8F8F8</color>
+    <color name="title_bg">#0099FF</color>
+
+    <color name="light_gray">#1a000000</color>
+
+    <color name="timeline_clickable_text_highlighted_background">#ffbedfff</color>
+
+    <!-- 下拉刷新时，颜色值 -->
+    <color name="swiperefresh_color1">#ff00ddff</color>
+
+
+    <color name="project_detail_item">#e2e0e0</color>
+
+    <!-- 反馈 -->
+
+    <!-- 日历dialog -->
+    <color name="blue">#ff33cc33</color>
+
+    <color name="transparent_black">#7F000000</color>
+
+    <color name="line">#ffd3dde6</color>
+    <color name="grayline">#FBFBFB</color>
+    <color name="font_color_35">#368ca8</color>
+    <color name="background_gray3">#D4D4D4</color>
+
+
+    <color name="text_gray3">#aaaaaa</color>
+
+
+    <!--app主色调，背景色-->
+    <!--背景色-->
+    <color name="colorBackground">#F5F5F5</color>
+    <!--app主题色，应用于导航，按钮-->
+    <!--主题色激活态，如按钮高亮-->
+    <!--红色标签/提示-->
+    <!--红色标签/提示高亮-->
+    <!--黄色色标签/提示-->
+    <!--黄色色标签/提示高亮-->
+    <!--黄色蒙版-->
+    <!--红色-->
+    <!--文字白色-->
+    <color name="colorTextWhite">#FFFFFF</color>
+    <!--文字G1-->
+    <!--文字G2-->
+    <!--文字G3-->
+    <!--文字G4-->
+    <!--文字black-->
+    <color name="colorTextBlack">#000000</color>
+    <!--gray1-->
+    <color name="colorGray1">#F0F0F0</color>
+    <!--light gray-->
+    <!--gray2-->
+    <color name="colorGray2">#DCDCDC</color>
+    <!--gray3-->
+    <color name="colorGray3">#C8C8C8</color>
+    <!--gray4-->
+    <!--gray5-->
+    <color name="colorGray5">#505050</color>
+    <!--gray6-->
+    <!--gray7-->
+    <color name="colorGray7">#D8D8D8</color>
+
+    <!--green-->
+    <color name="colorGreen">#0accac</color>
+
+    <color name="camera_video_grid_bg_color">#F3F4F6</color>
+    <color name="colorTransparentGray">#88ffffff</color>
+    <!-- 40%不透明度 -->
+    <color name="color_transparent_white">#4Effffff</color>
+
+    <!--蒙版-->
+
+
+    <!--颜色-->
+    <color name="color_F1">#FFf1f1f1</color>
+    <color name="color_2A">#FF2A2A32</color>
+    <color name="color_86">#FF86888C</color>
+    <color name="color_CC">#CCCCCC</color>
+    <color name="color_D1">#FFFFD100</color>
+    <color name="color_A8">#FFFFA800</color>
+    <color name="color_3D">#FFFF3D57</color>
+    <color name="color_28">#FF282828</color>
+    <color name="color_6">#FF666666</color>
+    <color name="color_9">#FF999999</color>
+    <color name="color_F27">#FFF27F1C</color>
+    <color name="color_E6">#FFE6E6E6</color>
+
+    <color name="color_3">#FF333333</color>
+    <color name="color_f4">#FFf4f4f4</color><!-- 背景色 -->
+
+</resources>

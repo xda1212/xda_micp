@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.relex.photodraweeview.PhotoDraweeView
+    android:id="@+id/iv_pager"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    fresco:placeholderImage="@drawable/__picker_ic_photo_black_48dp"
+    fresco:placeholderImageScaleType="fitCenter"/>

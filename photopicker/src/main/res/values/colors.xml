@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="__picker_pager_bg">#CA000000</color>
+    <color name="__picker_selected_bg">#44000000</color>
+    <color name="__picker_black_40">#282828</color>
+    <color name="__picker_common_primary">@android:color/white</color>
+
+    <color name="__picker_text_40">@android:color/white</color>
+    <color name="__picker_text_80">@android:color/white</color>
+    <color name="__picker_text_120">@android:color/white</color>
+    <color name="__picker_text_333">#333333</color>
+
+    <!--选中时的边框色-->
+    <color name="__picker_item_photo_border_selected">@android:color/transparent</color>
+    <color name="__picker_item_photo_border_n">@android:color/transparent</color>
+
+
+</resources>

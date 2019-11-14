@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- 下拉刷新 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- 左侧按钮相关 -->
+    <dimen name="tools_title_bar_left_margin">4dp</dimen>
+    <!-- 右侧按钮相关 -->
+    <dimen name="tools_title_bar_right_margin">4dp</dimen>
+    <!--弹窗圆角弧度-->
+    <dimen name="tools_dialog_radius">6dp</dimen>
+
+</resources>

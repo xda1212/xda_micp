@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.micp.im.ui.customviews.RefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_live_shiping"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.micp.im.ui.customviews.RefreshLayout>
+
+    <ImageView
+        android:id="@+id/video_fensi"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/no_live" />
+</RelativeLayout>

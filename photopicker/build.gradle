@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion '28.0.3'
+    resourcePrefix "__picker_"
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "0.9.0"
+    }
+}
+
+dependencies {
+    api project(path: ':lib-tools')
+    api 'com.android.support:support-v4:27.1.0'
+    api 'com.android.support:design:27.1.0'
+    api 'com.android.support:appcompat-v7:26.0.1'
+    api 'com.android.support:recyclerview-v7:26.0.1'
+    api 'com.android.support:support-annotations:27.1.0'
+    api 'com.nineoldandroids:library:2.4.0'
+    api 'me.relex:photodraweeview:1.1.2'
+    //Fresco框架
+    api 'com.facebook.fresco:fresco:1.5.0+'
+    api 'com.facebook.fresco:animated-gif:1.5.0+'
+    api 'com.facebook.fresco:imagepipeline-okhttp3:0.12.0+'
+}
+

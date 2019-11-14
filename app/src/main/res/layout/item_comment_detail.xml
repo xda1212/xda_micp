@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_comment_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.micp.im.widget.AvatarView
+                android:id="@+id/item_comment_user_head"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/item_comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignBottom="@id/item_comment_user_head"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/item_comment_user_head"
+                android:textColor="@color/color_9"
+                android:textSize="12sp" />
+
+            <com.micp.im.widget.BlackTextView
+                android:id="@+id/item_comment_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/item_comment_user_head"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:text="用户名"
+                android:textColor="@color/color_28"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/item_comment_user_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/item_comment_user_name"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/item_comment_user_name"
+                android:baselineAlignBottom="true"
+                android:src="@drawable/global_male" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/color_6"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_comment_content_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部"
+            android:textColor="@color/color_F27"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/ll_home_page_bottom_menu"
+        layout="@layout/view_home_page_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_home_page_bottom_menu"
+        android:background="@drawable/personal_bg"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--头部-->
+            <include layout="@layout/view_home_page_head" />
+
+            <!--无用-->
+            <!--主页-->
+            <include layout="@layout/view_home_page_index" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生日"
+                        android:textColor="@color/color_CC"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_birthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="生日"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="星座"
+                        android:textColor="@color/color_CC"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_constellation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="星座"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="城市"
+                        android:textColor="@color/color_CC"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/home_city"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="城市"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--视频-->
+            <include
+                layout="@layout/view_home_page_shiping"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp" />
+
+            <!--直播录像-->
+            <include layout="@layout/view_home_page_video" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_home_page_menu_lahei"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/ll_home_page_bottom_menu"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/home_page_live_button_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/tv_home_page_black_state"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/user_video" />
+    </LinearLayout>
+</RelativeLayout>

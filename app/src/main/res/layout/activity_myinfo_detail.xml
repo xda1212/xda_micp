@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.micp.im.ui.customviews.ActivityTitle
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:titleColor="@color/black"
+        app:titleText="@string/edit_info" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/myinfo_detail_head_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="@string/head"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/myinfo_detail_header_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/myinfo_detail_head_describe"
+            android:text="必填"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <com.micp.im.widget.AvatarView
+            android:id="@+id/av_userHead"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_f4" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/myinfo_detail_nickname_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="@string/nick_name"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/myinfo_detail_nickname_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/myinfo_detail_nickname_describe"
+            android:text="必填"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/tv_userNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userSign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="签名"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/tv_userSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:maxEms="14"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="@string/birthday"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/et_info_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:hint="@string/fill_in_birthday"
+            android:textColorHint="#E2E2E5" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="星座"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/myinfo_detail_constellation_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_16" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/myinfo_detail_city_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="城市"
+            android:textSize="@dimen/text_size_16" />
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/myinfo_detail_city_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:singleLine="true"
+            android:text="广州市"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_userSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_16">
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/myinfo_detail_sex_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_4"
+            android:text="@string/sex"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/myinfo_detail_sex_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/myinfo_detail_sex_describe"
+            android:text="必填"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_16"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_info_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/me_go" />
+    </RelativeLayout>
+
+    <View style="@style/h_line" />
+</LinearLayout>

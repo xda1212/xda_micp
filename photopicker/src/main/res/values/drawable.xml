@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <drawable name="__picker_item_bg">#232323</drawable>
+
+    <drawable name="__picker_transparent">@android:color/white</drawable>
+
+</resources>

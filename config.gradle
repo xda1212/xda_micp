@@ -1,0 +1,11 @@
+ext {
+
+    compileSdkVersion = 26
+    buildToolsVersion = "27.0.3"
+    minSdkVersion = 19
+    targetSdkVersion = 26
+
+    design='com.android.support:design:27.1.0'
+    appcompatV7='com.android.support:appcompat-v7:27.1.0'
+    recyclerviewV7='com.android.support:recyclerview-v7:27.1.0'
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.micp.im.ui.customviews.ActivityTitle
+        android:id="@+id/view_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/graywhite"
+        android:visibility="gone"
+        app:titleColor="@color/black"
+        app:titleText="@string/following" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/sl_newest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.micp.im.widget.HeaderGridView
+                android:id="@+id/gv_newest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="4dp"
+                android:numColumns="2"
+                android:verticalSpacing="4dp"></com.micp.im.widget.HeaderGridView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <ImageView
+            android:id="@+id/newest_fensi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
+            android:src="@drawable/bg_attention_live_empty"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/newest_load"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/shibai" />
+
+            <com.micp.im.widget.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:text="@string/loading_error"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

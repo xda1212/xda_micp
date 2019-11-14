@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.CommentDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <ImageView
+            android:id="@+id/comment_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/btn_return" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="评论" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.micp.im.widget.list.PullToRefreshAutoLoadListView
+            android:id="@+id/community_detail_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrAnimationStyle="frame"
+            ptr:ptrMode="pullFromStart"
+            ptr:ptrRefreshableViewBackground="@color/color_f4"
+            ptr:ptrScrollingWhileRefreshingEnabled="false"
+            ptr:ptrShowHeaderText="false"
+            ptr:ptrShowIndicator="false" />
+
+        <LinearLayout
+            android:id="@+id/community_detail_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/shibai" />
+
+            <com.micp.im.widget.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:text="加载失败"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20" />
+
+            <com.micp.im.widget.BlackTextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="快快开启你的直播吧"
+                android:textColor="@color/gray"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/color_f4"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/comment_detail_comment_edit"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="请你评论"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/color_6"
+            android:textColorHint="@color/color_CC"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/comment_detail_send"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/shape_comment_detail_button"
+            android:gravity="center"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

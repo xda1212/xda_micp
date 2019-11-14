@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:background="@color/home_page_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_select_avatar_back"
+            android:src="@drawable/icon_arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.micp.im.widget.BlackTextView
+            android:id="@+id/tv_order_total"
+            android:textColor="@color/black"
+            android:text="@string/ranking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/rank_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

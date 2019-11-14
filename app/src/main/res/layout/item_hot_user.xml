@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/space_5"
+    android:paddingLeft="@dimen/space_5"
+    android:paddingBottom="@dimen/space_5">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:weightSum="7"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <com.micp.im.widget.AvatarView
+                        android:id="@+id/iv_live_user_head"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"></com.micp.im.widget.AvatarView>
+
+                    <ImageView
+                        android:id="@+id/iv_live_user_anchorlevel"
+                        style="@style/live_level_style"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/space_25"
+                        android:layout_marginTop="@dimen/space_25">
+
+
+                    </ImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+<!--                    <com.micp.im.widget.BlackTextView-->
+<!--                        android:id="@+id/tv_live_nick"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:ellipsize="end"-->
+<!--                        android:maxEms="8"-->
+<!--                        android:singleLine="true"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="@dimen/text_size_17" />-->
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/live_map_dark" />
+
+                        <com.micp.im.widget.BlackTextView
+                            android:id="@+id/tv_live_local"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/light_gray2"
+                            android:textSize="@dimen/text_size_12" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <!--<com.micp.im.widget.BlackTextView
+                    android:id="@+id/tv_live_usernum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/global"
+                    android:textSize="@dimen/text_size_20" />-->
+
+                <com.micp.im.widget.BlackTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/lookin"
+                    android:textColor="@color/light_gray2"
+                    android:textSize="@dimen/text_size_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.micp.im.widget.LoadUrlImageView
+                android:id="@+id/iv_live_user_pic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_live_4_4"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/iv_live_hot_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/space_10"
+                android:background="@drawable/ready_live_bg"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:text="普通直播"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+
+
+            <com.micp.im.widget.BlackTextView
+                android:id="@+id/tv_live_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="8"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_16"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"/>
+
+            <com.micp.im.widget.BlackTextView
+                android:id="@+id/tv_hot_room_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_12"
+                android:singleLine="true"
+                android:layout_above="@+id/tv_live_nick"
+                android:visibility="gone" />
+
+
+            <com.micp.im.widget.BlackTextView
+                android:id="@+id/tv_live_usernum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_12"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_10"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--<com.micp.im.widget.BlackTextView
+        android:id="@+id/tv_hot_room_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/colorGray1" />-->
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@mipmap/tools_step_h"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_i"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_j"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_k"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_l"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_m"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_n"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_o"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_p"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_q"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_r"
+        android:duration="80">
+    </item>
+    <item
+        android:drawable="@mipmap/tools_step_s"
+        android:duration="80">
+    </item>
+
+</animation-list>

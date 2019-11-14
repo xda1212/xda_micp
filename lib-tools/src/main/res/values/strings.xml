@@ -1,0 +1,18 @@
+<resources>
+
+
+    <!-- 分享专用 -->
+    <string name="share_url">http://m.aomygod.com/item/%s.html</string>
+    <string name="share_detail">今天在百分百正品保证的奥买家发现了一件不错滴东东，伙伴们快去抢购吧...</string>
+    <string name="share_shop_detail">今天在奥买家发现一个不错的店铺，快来看看~</string>
+    <string name="packet_share_title">奥买家穿越时空，大礼为你而来!</string>
+    <string name="not_intall_sina">未安装微博,分享失败</string>
+    <string name="not_intall_qq">未安装qq,分享失败</string>
+    <string name="not_intall_weixin">未安装微信,分享失败</string>
+
+    <string name="tools_new_error">哎呀，网络好像出问题了！</string>
+    <string name="tools_system_exception">系统异常，请稍后再试！</string>
+    <string name="tools_no_data">暂无数据，刷新一下试试</string>
+
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout
+        android:id="@+id/fl_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:paddingLeft="@dimen/header_footer_left_right_padding"
+        android:paddingRight="@dimen/header_footer_left_right_padding"
+        android:paddingTop="@dimen/header_footer_top_bottom_padding" >
+        <!--下拉刷新-->
+        <FrameLayout
+            android:layout_width="200dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center|top"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/pull_to_refresh_bg_layout"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:scaleType="centerInside" />
+
+            <!--内部城市圈,顺时针转-->
+            <ImageView
+                android:id="@+id/pull_to_refresh_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="64dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/tools_refresh_earth" />
+            <!--外部飞机框,逆时针转-->
+            <ImageView
+                android:id="@+id/pull_to_refresh_sub_image"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/tools_refresh_airplane" />
+            <!--中心文字：购全球,上奥买家-->
+            <ImageView
+                android:id="@+id/pull_to_refresh_slogan_image"
+                android:layout_width="84dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerInside"
+                android:visibility="invisible"
+                android:background="@mipmap/tools_refresh_logo" />
+        </FrameLayout>
+
+        <!--上拉加载-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/pull_to_refresh_text_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearance"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/pull_to_refresh_sub_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/pull_to_refresh_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp" >
+
+                <ImageView
+                    android:id="@+id/pull_to_refresh_upimg"
+                    android:layout_width="156dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="12dp" />
+
+                <ImageView
+                    android:id="@+id/pull_to_refresh_finish"
+                    android:layout_width="156dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:paddingLeft="12dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</merge>

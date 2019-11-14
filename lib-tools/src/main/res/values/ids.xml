@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 侧滑菜单用到 -->
+    <item name="tools_slid_menu_selected_view" type="id"/>
+</resources>

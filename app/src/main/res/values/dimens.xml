@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="live_btn_size">35dp</dimen>
+    <!--大小-->
+    <!--h1-->
+    <!--h2-->
+    <!--h3-->
+    <!--h4-->
+    <dimen name="h4">12sp</dimen>
+    <!--h5-->
+    <!--h6-->
+    <dimen name="h6">14sp</dimen>
+    <!--h7-->
+    <!--h8-->
+    <dimen name="h8">16sp</dimen>
+    <!--h9-->
+    <!--h10-->
+    <dimen name="h10">18sp</dimen>
+    <!--h11-->
+
+    <!-- OSChina APP -->
+    <dimen name="text_size_28">28.0dip</dimen>
+    <dimen name="text_size_25">25.0dip</dimen>
+    <dimen name="text_size_22">22.0dip</dimen>
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_19">19.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_17">17.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+    <dimen name="text_size_15">15.0dip</dimen>
+    <dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_13">13.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_11">11.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+    <dimen name="text_size_9">9.0dip</dimen>
+    <dimen name="text_size_8">8.0dip</dimen>
+    <dimen name="space_100">100.0dip</dimen>
+    <dimen name="space_60">60dp</dimen>
+    <dimen name="space_30">30.0dip</dimen>
+    <dimen name="space_25">25.0dip</dimen>
+    <dimen name="space_23">23.0dip</dimen>
+    <dimen name="space_20">20.0dip</dimen>
+    <dimen name="space_18">18.0dip</dimen>
+    <dimen name="space_16">16.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_13">13.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_8">8.0dip</dimen>
+    <dimen name="space_6">6.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_4">4.0dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+    <dimen name="space_2">2.0dip</dimen>
+    <dimen name="space_1">1.0dip</dimen>
+
+    <dimen name="global_padding">8.0dip</dimen>
+
+    <!-- 意见反馈 -->
+
+    <!-- 时间选择dialog -->
+
+    <dimen name="ugc_item_thumb_height">65dp</dimen>
+
+
+    <!-- 下拉刷新 -->
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    <!-- 左侧按钮相关 -->
+    <dimen name="tools_title_bar_left_margin">4dp</dimen>
+    <!-- 右侧按钮相关 -->
+    <dimen name="tools_title_bar_right_margin">4dp</dimen>
+    <!--弹窗圆角弧度-->
+    <dimen name="tools_dialog_radius">6dp</dimen>
+</resources>

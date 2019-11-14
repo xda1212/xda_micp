@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api rootProject.appcompatV7
+    api rootProject.recyclerviewV7
+    //Gson解析
+    api 'com.google.code.gson:gson:2.7'
+    //Fresco框架
+    api 'com.facebook.fresco:fresco:1.5.0+'
+    api 'com.facebook.fresco:animated-gif:1.5.0+'
+    api 'com.facebook.fresco:imagepipeline-okhttp3:0.12.0+'
+    // 弹性效果
+    api 'me.everything:overscroll-decor-android:1.0.4'
+//    implementation files('libs/Android_Location_V1.3.2.jar')
+    api files('libs/httpmime-4.1.3.jar')
+//    //阿里支付
+//    api files('libs/alipaySdk-20170922.jar')
+}

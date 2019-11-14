@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<com.micp.im.ui.customviews.ActivityTitle
+        android:id="@+id/view_title"
+        android:background="@color/white"
+        app:titleColor="@color/black"
+        app:titleText="@string/reset_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_F27">
+
+        <ImageView
+            android:id="@+id/iv_find_pass_return"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/icon_arrow_left_white"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <!--<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.micp.im.widget.BlackTextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="+86"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"/>
+            <com.micp.im.widget.BlackEditText
+                android:inputType="number"
+                android:id="@+id/et_loginphone"
+                android:textColorHint="#E2E2E5"
+                android:background="@null"
+                android:hint="@string/plase_input_phone_num"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/btn_phone_login_send_code"
+                android:textColor="@color/white"
+                android:text="@string/send_code"
+                android:background="@drawable/btn_common"
+                android:layout_width="70dp"
+                android:layout_height="35dp" />
+        </LinearLayout>
+        <View
+            style="@style/h_line"/>-->
+
+        <com.micp.im.widget.BlackEditText
+            android:id="@+id/et_loginphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login_editview_bg"
+            android:drawableLeft="@drawable/login_phone_icon"
+            android:drawablePadding="10dp"
+            android:hint="请输入有效11位手机号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@color/color_CC"
+            android:textSize="15sp" />
+       <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.micp.im.widget.BlackTextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="@string/vaildate_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"/>
+            <com.micp.im.widget.BlackEditText
+                android:id="@+id/et_logincode"
+                android:textColorHint="#E2E2E5"
+                android:background="@null"
+                android:hint="@string/plase_fill_in_vaildate_code"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                ></View>
+        </LinearLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_login_editview_bg">
+
+            <com.micp.im.widget.BlackEditText
+                android:id="@+id/et_logincode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_login_editview_bg"
+                android:drawableLeft="@drawable/login_code_icon"
+                android:drawablePadding="10dp"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="@color/color_CC"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/space_20"
+                android:gravity="center"
+                android:id="@+id/btn_phone_login_send_code"
+                android:textColor="@color/white"
+                android:text="发验证码"
+                android:background="@drawable/login_button_bg"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                />
+        </RelativeLayout>
+      <!--  <View
+            style="@style/h_line"/>
+        &lt;!&ndash; HHH 2016-09-09 &ndash;&gt;
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.micp.im.widget.BlackTextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="@string/pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"/>
+
+            <com.micp.im.widget.BlackEditText
+                android:id="@+id/et_password"
+                android:textColorHint="#E2E2E5"
+                android:background="@null"
+                android:hint="@string/plase_fill_in_pass"
+                android:inputType="textPassword"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="70dp"
+                android:layout_height="fill_parent"
+                ></View>
+        </LinearLayout>
+        <View
+            style="@style/h_line"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.micp.im.widget.BlackTextView
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:text="@string/confirm_pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"/>
+            <com.micp.im.widget.BlackEditText
+                android:id="@+id/et_secondPassword"
+                android:textColorHint="#E2E2E5"
+                android:background="@null"
+                android:hint="@string/again_fill_in_pass"
+                android:inputType="textPassword"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                ></View>
+        </LinearLayout>
+        <View
+            style="@style/h_line"/>-->
+
+        <com.micp.im.widget.BlackEditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login_editview_bg"
+            android:drawableLeft="@drawable/login_password_icon"
+            android:drawablePadding="10dp"
+            android:hint="请填写至少6位密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@color/color_CC"
+            android:textSize="15sp" />
+
+        <!--   <View
+               style="@style/h_line"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="60dp"
+               android:orientation="horizontal">
+               <com.micp.im.widget.BlackTextView
+                   android:textColor="@color/black"
+                   android:textSize="18dp"
+                   android:text="确认密码"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.5"/>
+               <com.micp.im.widget.BlackEditText
+                   android:id="@+id/et_secondPassword"
+                   android:textColorHint="#E2E2E5"
+                   android:background="@null"
+                   android:hint="请再次输入密码"
+                   android:inputType="textPassword"
+                   android:layout_weight="5"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp" />
+
+           </LinearLayout>
+           <View
+               style="@style/h_line"/>-->
+
+        <com.micp.im.widget.BlackEditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/et_secondPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_login_editview_bg"
+            android:drawableLeft="@drawable/login_password_icon"
+            android:drawablePadding="10dp"
+            android:hint="请再次输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@color/color_CC"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <com.micp.im.widget.BlackButton
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btn_doResetPassword"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_button_bg"
+        android:text="@string/find_pass"
+        android:layout_width="270dp"
+        android:layout_height="50dp" />
+
+</LinearLayout>

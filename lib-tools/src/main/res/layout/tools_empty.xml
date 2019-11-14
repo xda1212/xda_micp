@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/empty_layout_bg"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+    >
+
+    <View
+        android:id="@+id/view_center_base_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:id="@+id/empty_img_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:src="@mipmap/tools_empty_network"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_center_base_line"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/empty_txt_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:textColor="@color/tools_color_6"
+            android:textSize="13sp"
+            android:visibility="visible"
+            android:maxLines="5"
+            />
+
+        <TextView
+            android:id="@+id/empty_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/tools_bg_refresh_btn"
+            android:paddingBottom="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="8dp"
+            android:text="刷新"
+            android:textColor="@color/tools_color_6"
+            android:textSize="13sp"
+            android:visibility="visible"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

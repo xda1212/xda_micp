@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="权限不足将影响应用正常使用，请按以下步骤给足应用权限:\n前往设置->应用信息->点击“权限”。"
+        android:textColor="@android:color/black"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="退出应用"
+            android:textColor="#0000ff"
+            android:textSize="14dp" />
+
+
+        <TextView
+            android:id="@+id/dialog_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="前往设置"
+            android:textColor="#0000ff"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

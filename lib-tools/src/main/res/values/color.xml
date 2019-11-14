@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tools_bg_color">#ffffff</color>
+    <color name="tools_press_color">#f0efed</color>
+
+    <color name="tools_divider">#e5e5e5</color>
+    <color name="tools_color_3">#333333</color>
+    <color name="tools_theme_red">#e6465a</color>
+    <color name="tools_color_6">#666</color>
+    <color name="tools_color_9">#999999</color>
+    <color name="tools_color_f0efed">#f0efed</color>
+    <color name="tools_black_c5" >#c5c5c5</color>
+    <color name="tools_white">#ffffff</color>
+    <color name="tools_gray_f4">#F4F4F4</color>
+</resources>
